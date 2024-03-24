@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/poem"
+    android:orientation="vertical"
+    tools:context=".HaikuMoonlitActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/sound">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rainbow"
+        android:drawingCacheQuality="auto"
+        android:fadeScrollbars="true"
+        android:fadingEdge="horizontal|vertical"
+        android:focusable="auto"
+        android:foregroundGravity="center"
+        android:requiresFadingEdge="vertical">
+
+    </ImageView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/rainbow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sc_bold_italic"
+            android:text="@string/rainbow"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp">
+
+        </TextView>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

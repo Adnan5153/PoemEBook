@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen1"
+    android:visibility="visible"
+    tools:context=".HomeActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="358dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="52dp" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/PoemmyCircleImageButton"
+        android:layout_width="64dp"
+        android:layout_height="56dp"
+        android:src="@drawable/mypoems"
+        app:civ_border_color="#00FF0000"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/DiscovermyCircleImageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/SettingmyCircleImageButton"
+        android:layout_width="64dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="52dp"
+        android:src="@drawable/settings"
+        app:civ_border_color="#00FF0000"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DiscovermyCircleImageButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/DiscovermyCircleImageButton"
+        android:layout_width="64dp"
+        android:layout_height="58dp"
+        android:src="@drawable/discover"
+        app:civ_border_color="#00F4F1F1"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <TextView
+        android:id="@+id/textViewpoem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/jetbrains_mono_extrabold"
+        android:text="MY POEM"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/PoemmyCircleImageButton"
+        app:layout_constraintStart_toStartOf="@+id/PoemmyCircleImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/PoemmyCircleImageButton" />
+
+
+    <TextView
+        android:id="@+id/textViewsetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jetbrains_mono_extrabold"
+        android:text="SETTINGS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/SettingmyCircleImageButton"
+        app:layout_constraintStart_toStartOf="@+id/SettingmyCircleImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/SettingmyCircleImageButton" />
+
+    <TextView
+        android:id="@+id/textViewdiscover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jetbrains_mono_extrabold"
+        android:text="DISCOVER"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/DiscovermyCircleImageButton"
+        app:layout_constraintStart_toStartOf="@+id/DiscovermyCircleImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/DiscovermyCircleImageButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
