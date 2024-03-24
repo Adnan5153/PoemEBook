@@ -1,2 +1,2 @@
 # PoemEBook
-A static Poem E-Book for kids
+An android application Poem E-Book for kids
